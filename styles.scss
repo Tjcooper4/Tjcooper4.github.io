@@ -1,0 +1,27 @@
+@import 'normalize';
+@import 'variables'; // Import the variables file
+@import 'components/main';
+@import 'components/menu';
+@import 'components/footer';
+@import 'components/video-container';
+@import 'components/featured-work';
+@import 'components/contact';
+
+// Define color variable
+$background-color: white;
+
+// Apply background color to body
+body {
+  background-color: $background-color;
+  padding-top: 0;
+  padding: 0; // Adjust this value to match the height of your menu bar
+
+}
+
+#main {
+  margin-top: 14vw; // Move the main div below the menu bar at smaller screen sizes
+
+  @media (min-width: 1020px) {
+    margin-top: 0vw; // Move the main div to the top of the page at larger screen sizes
+  }
+}

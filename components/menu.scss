@@ -1,0 +1,75 @@
+
+#menu {
+    min-height: 85px; // Set the minimum height of the menu bar to 85px
+    height: 14vw;
+    background-color: $black-1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    
+    @media (min-width: 1020px) {
+        position: fixed; // Make the menu bar fixed
+        top: 0; // Position it at the top of the page
+        left: 0; // Position it at the left of the page
+        width: 7vw; // Set the width of the menu bar
+        height: 100vh; // Make it span the full height of the viewport
+    }
+
+    #logo {
+        flex: 0 0 50%;
+        height: 14vw;
+        background-color: #ab0101;
+
+        @media (min-width: 1020px) {
+            display: none; // Hide the logo at larger screen sizes
+        }
+    }
+
+    #hamburger-button {
+        margin-left: auto; // Push the hamburger button to the right
+        width: 14vw;
+        height: 14vw;
+        background-color: #ff1b1b;
+    
+        @media (min-width: 1020px) {
+          order: 1; // Move the hamburger button to the end of the container
+          margin-left: 0; // Remove the left margin
+          width: 7vw; // Set the width equal to the width of the menu bar
+          height: 7vw; // Set the height equal to the width of the menu bar
+        }
+      }
+}
+
+#menu-items-container {
+    position: fixed; // Position the menu-items-container fixed
+    top: 14vw; // Position it below the menu bar
+    left: 0; // Align it with the left edge of the viewport
+    width: 100vw; // Make it span the full width of the viewport
+    display: none; // Hide the menu items by default
+    flex-direction: column; // Stack the menu items vertically
+
+    @media (min-width: 1020px) {
+        top: 0; // Position it at the top of the viewport
+        left: 14vw; // Position it to the right of the menu bar
+        height: 100vh; // Make it span the full height of the viewport
+        flex-direction: row; // Arrange the menu items horizontally
+    }
+
+    &.open {
+        display: flex; // Display the menu items when the menu is open
+    }
+
+    #menu-items, #contact-info {
+        width: 100%; // Make each div take up the full width of the viewport
+
+        @media (min-width: 1020px) {
+            width: 50%; // Make each div take up half the width of the viewport
+        }
+    }
+}
+
+.menu-phrase {
+    display: none; // Hide the menu-phrase by default
+}
+

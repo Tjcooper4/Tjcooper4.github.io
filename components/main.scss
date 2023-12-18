@@ -1,0 +1,51 @@
+// Define basic styles for componentsnn
+
+
+#video-container {
+    margin-top: 0; // Remove top margin
+  padding-top: 0; // Remove top padding
+
+    background-color: #999; // medium grey
+  }
+  
+  #featured-work {
+    height: 300px;
+    background-color: #666; // dark grey
+  }
+  
+  #contact {
+    height: 200px;
+    background-color: #333; // darker grey
+  }
+  
+  footer {
+    height: 50px;
+    background-color: #000; // black
+  }
+  
+  body {
+    position: relative; // Position the body relative to the viewport
+    top: 0; // Position the body at the top of the viewport
+  }
+  
+  #video-container,
+  #featured-work,
+  #contact {
+    overflow: auto;
+  
+    @media (min-width: 1020px) {
+      margin-top: 0; // Move the sections to the top of the page
+      margin-left: 0; // Align the sections against the menu bar
+      padding-left: 14vw; // Start the content after the width of the menu bar
+    }
+  }
+  
+  footer {
+    // Other styles...
+  
+    @media (min-width: 1020px) {
+      margin-top: 0vw; // Move the footer to the top of the page
+      margin-left: 0vw; // Align the footer against the menu bar
+      padding-left: 14vw; // Start the content after the width of the menu bar
+    }
+  }
