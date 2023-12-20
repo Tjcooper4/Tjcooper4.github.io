@@ -1,11 +1,12 @@
 @import 'normalize';
 @import 'variables'; // Import the variables file
 @import 'components/main';
+@import 'components/tagline';
 @import 'components/menu';
 @import 'components/footer';
 @import 'components/video-container';
 @import 'components/featured-work';
-@import 'components/contact';
+@import 'components/start-project';
 
 // Define color variable
 $background-color: white;

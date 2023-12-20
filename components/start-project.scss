@@ -1,0 +1,9 @@
+#start-project {
+    background-image: url('start-project.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10vw; // BEGIN: Added padding
+    padding-right: 10vw; // END: Added padding
+    height: 500px; // Set static height
+}

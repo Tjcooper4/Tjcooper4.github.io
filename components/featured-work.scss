@@ -1,0 +1,12 @@
+#featured-item-list {
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto; // Enable horizontal scrolling
+    -webkit-overflow-scrolling: touch; // Enable smooth scrolling on iOS devices
+    scroll-snap-type: x mandatory; // Enable snapping behavior
+    scroll-padding: 0 10px; // Add padding to the scrollable area
+}
+
+.featured-item {
+    scroll-snap-align: start; // Snap each item to the start of the scroll container
+}
