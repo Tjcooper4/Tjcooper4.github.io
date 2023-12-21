@@ -1,9 +1,34 @@
 #start-project {
-    background-image: url('start-project.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-left: 10vw; // BEGIN: Added padding
-    padding-right: 10vw; // END: Added padding
-    height: 500px; // Set static height
+    position: relative; // Add relative positioning to the start-project section
+    height: 120vw; // Set height to 1.5 times the width of the viewport
+    overflow: hidden; // Hide any overflow
+}
+
+#image-wrapper {
+    position: relative; // Add absolute positioning to the image-wrapper element
+    top: 5vw; // Position the image-wrapper element 10vw from the top of the start-project section
+    left: 5vw; // Position the image-wrapper element 10vw from the left of the start-project section
+    width: 90vw; // Set the width of the image-wrapper element to 100% of the start-project section minus 20vw
+    height: calc(100% - 20vw); // Set the height of the image-wrapper element to 100% of the start-project section minus 20vw
+    padding: 0; // Remove any padding from the image-wrapper element
+
+    &::after {
+        content: ""; // Add content to the pseudo-element
+        position: absolute; // Add absolute positioning to the pseudo-element
+        top: 0; // Position the pseudo-element at the top of the image-wrapper element
+        left: 0; // Position the pseudo-element at the left of the image-wrapper element
+        width: 100%; // Set the width of the pseudo-element to 100% of the image-wrapper element
+        height: 100%; // Set the height of the pseudo-element to 100% of the image-wrapper element
+        background-color: rgba(0, 0, 0, 0.5); // Set the background color of the pseudo-element to a semi-transparent black
+    }
+}
+
+#start-image {
+    position: absolute; // Add absolute positioning to the start-image element
+    top: 0; // Position the start-image element at the top of the image-wrapper element
+    left: 0; // Position the start-image element at the left of the image-wrapper element
+    width: 100%; // Set the width of the start-image element to 100% of the image-wrapper element
+    height: 100%; // Set the height of the start-image element to 100% of the image-wrapper element
+    object-fit: cover; // Scale the image to cover the image-wrapper element
+    object-position: center; // Center the image
 }

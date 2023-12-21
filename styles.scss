@@ -19,10 +19,3 @@ body {
 
 }
 
-#main {
-  margin-top: 14vw; // Move the main div below the menu bar at smaller screen sizes
-
-  @media (min-width: 1020px) {
-    margin-top: 0vw; // Move the main div to the top of the page at larger screen sizes
-  }
-}

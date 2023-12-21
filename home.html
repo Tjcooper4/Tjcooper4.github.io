@@ -7,14 +7,19 @@
 <body>
 <!-- Menu Bar -->
 <div id="menu" class="closed">
- <!-- Logo -->
- <div id="logo">
-     <!-- Logo image or text goes here -->
- </div>
- 
- 
- 
+    <!-- Logo -->
+    <div id="logo">
+        <!-- Logo image or text goes here -->
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="hamburger-button" aria-label="Menu">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </button>
 </div>
+
 <!-- Menu Phrases -->
 <div id="default-menu" class="menu-phrase">WHO WE ARE</div>
 <div id="menu-start" class="menu-phrase">POWERED BY SPEED DIGITAL</div>
@@ -23,22 +28,16 @@
 <div id="menu-contact" class="menu-phrase">CONTACT US</div>
 <div id="menu-about" class="menu-phrase">ABOUT US</div>
 <div id="menu-team" class="menu-phrase">OUR TEAM</div>
-
-    <!-- Hamburger Button -->
-    <button id="hamburger-button">
-       <!-- Hamburger icon goes here -->
-    </button>
-
     <!-- Menu Items -->
     
     <div id="menu-items-container">
         <nav id="menu-items" class="hidden">
-            <a href="#">Home</a>
-            <a href="#">Websites</a>
-            <a href="#">Software</a>
-            <a href="#">Digital Marketing</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="#" class="menu-link">Home</a>
+            <a href="#" class="menu-link">Websites</a>
+            <a href="#" class="menu-link">Software</a>
+            <a href="#" class="menu-link">Digital Marketing</a>
+            <a href="#" class="menu-link">About Us</a>
+            <a href="#" class="menu-link">Contact</a>
             <!-- Add more menu items as needed -->
         </nav>
         <div id="contact-info-menu">
@@ -79,43 +78,46 @@
             <h1 id="featured-title">Featured Work</h1>
             <div id="featured-item-list">
                 <div class="featured-item">
-                    <img src="dealer_placeholder.png" alt="Dealer Placeholder Image">
+                    <img class="dealer-image" src="dealer_placeholder.png" alt="Dealer Placeholder Image">
                     <h2 class="dealer-name">Car Dealership 1</h2>
-                    <p>Description 1</p>
+                    <p class="item-description">Description 1</p>
                 </div>
                 <div class="featured-item">
-                    <img src="dealer_placeholder.png" alt="Dealer Placeholder Image">
+                    <img class="dealer-image" src="dealer_placeholder.png" alt="Dealer Placeholder Image">
                     <h2 class="dealer-name">Car Dealership 2</h2>
-                    <p>Description 2</p>
+                    <p class="item-description">Description 2</p>
                 </div>
                 <div class="featured-item">
-                    <img src="dealer_placeholder.png" alt="Dealer Placeholder Image">
+                    <img class="dealer-image" src="dealer_placeholder.png" alt="Dealer Placeholder Image">
                     <h2 class="dealer-name">Car Dealership 3</h2>
-                    <p>Description 3</p>
+                    <p class="item-description">Description 3</p>
                 </div>
                 <div class="featured-item">
-                    <img src="dealer_placeholder.png" alt="Dealer Placeholder Image">
+                    <img class="dealer-image" src="dealer_placeholder.png" alt="Dealer Placeholder Image">
                     <h2 class="dealer-name">Car Dealership 4</h2>
-                    <p>Description 4</p>
+                    <p class="item-description">Description 4</p>
                 </div>
                 <div class="featured-item">
-                    <img src="dealer_placeholder.png" alt="Dealer Placeholder Image">
+                    <img class="dealer-image" src="dealer_placeholder.png" alt="Dealer Placeholder Image">
                     <h2 class="dealer-name">Car Dealership 5</h2>
-                    <p>Description 5</p>
+                    <p class="item-description">Description 5</p>
                 </div>
             </div>
         </section>
-        </section>
+        
             <div class="buttons">
-                <button id="previous-button">Previous</button>
-                <button id="next-button">Next</button>
-                <button id="view-all-button">VIEW ALL WORK</button>
+                <button id="previous-button" class="featured-button">Previous</button>
+                <button id="next-button" class="featured-button">Next</button>
+                <button id="view-all-button" class="featured-button">VIEW ALL WORK</button>
             </div>
         </section>
         <!-- Start Project -->
         <section id="start-project">
             <h1>Do you have a project in mind?</h1>
             <p>Are you looking for a web design studio? We're based in Charlotte, NC but would love to work with you no matter where you are! Let us know your plans and we will call you today to answer your questions and tell you how we can help.</p>
+            <div id="image-wrapper">
+                <img src="start-project.jpg" alt="Start Project" id="start-image">
+            </div>
             <button id="start-project-button">START A PROJECT</button>
         </section>
 
